@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: #000000; 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 300px;
+}
+
+/* Navigation Styles */
+nav {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container Styles */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h2 {
+    color: #000000; 
+}
+
+/* Services and Industries Grid */
+.services, .industries {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Service Box Styles */
+.services div {
+    border: 2px solid #000000; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    text-align: center; /* Center text */
+    background-color: #f9f9f9; /* Background color of the box */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.services div:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+}
+
+/* Industry Box Styles */
+.industries div {
+    border: 2px solid #000000; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    text-align: center; /* Center text */
+    background-color: #f9f9f9; /* Background color of the box */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.industries div:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services, .industries {
+        grid-template-columns: 1fr;
+    }
+}
